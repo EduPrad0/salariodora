@@ -3,6 +3,6 @@ for educational purposes
 
 
 ### nomes
-Eduardo do Prado
-Caio Delfino
-Lucas David
+1. Eduardo do Prado
+1. Caio Delfino
+1. Lucas David
