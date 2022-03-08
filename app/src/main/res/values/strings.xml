@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Salariodora</string>
+    <string name="fieldName">Seu nome</string>
+    <string name="p_fieldName">Digite seu nome</string>
+
+    <string name="inss">INSS</string>
+    <string name="salario_bruto">Salário bruto</string>
+    <string name="salario_liquido">Salário liquido</string>
+    <string name="p_salario_bruto">Digite seu salário bruto</string>
+
+
+    <string name="n_dep">Número de dependentes</string>
+    <string name="irrf">IRRF</string>
+    <string name="p_n_dep">Digite o número de dependentes</string>
+
+    <string name="plano_saude">Plano de saúde</string>
+
+    <string name="vale_trans">Vale Transporte</string>
+    <string name="vale_aliment">Vale Alimentação</string>
+    <string name="vale_ref">Vale Refeição</string>
+    <string name="desc_itens">Marque os benefícios que você possui</string>
+
+    <string name="valida_spinner">Digite um plano de saúde</string>
+    <string name="valida_nome">Digite seu nome</string>
+    <string name="valida_salBruto">Digite o seu salário</string>
+    <string name="limpar">Limpar</string>
+
+    <string name="calcular">Calcular</string>
+    <string-array name="select_saude">
+        <item>Escolha um plano</item>
+        <item>Standard</item>
+        <item>Básico</item>
+        <item>Super</item>
+        <item>Master</item>
+    </string-array>
+</resources>

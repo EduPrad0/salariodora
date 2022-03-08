@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/label_style"
+                android:text="@string/fieldName" />
+
+            <EditText
+                style="@style/input_style"
+                android:hint="@string/p_fieldName"
+                android:id="@+id/edit_name"
+                />
+
+            <TextView
+                style="@style/label_style"
+                android:layout_marginTop="15dp"
+                android:text="@string/salario_bruto" />
+
+            <EditText
+                style="@style/input_style"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:hint="@string/p_salario_bruto"
+                android:id="@+id/edit_salBruto"
+
+                />
+
+            <TextView
+                style="@style/label_style"
+                android:layout_marginTop="15dp"
+                android:text="@string/n_dep" />
+
+            <EditText
+                style="@style/input_style"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:hint="@string/p_n_dep"
+                android:id="@+id/edit_numDep"
+
+                />
+
+            <TextView
+                style="@style/label_style"
+                android:layout_marginTop="15dp"
+                android:text="@string/plano_saude" />
+
+            <Spinner
+                android:id="@+id/spinner_saude"
+                style="@style/spinner_style"
+                android:entries="@array/select_saude"
+                android:spinnerMode="dialog"
+                />
+
+            <TextView
+                style="@style/label_style"
+                android:layout_marginTop="30dp"
+                android:text="@string/desc_itens" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vale_trans"
+                android:id="@+id/vale_trans"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vale_aliment"
+                android:id="@+id/vale_aliment"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vale_ref"
+                android:id="@+id/vale_ref"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/bt_calc"
+                    android:layout_weight="4"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/calcular"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/bt_limpar"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/limpar"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_result"
+                style="@style/result_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
